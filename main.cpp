@@ -40,12 +40,12 @@ void dynamic_fib(int a){
 int main() {
     clock_t t1, t2;
 
-   for(int i = 0; i < 30; i ++){
+   for(int i = 0; i < 45; i ++){
         std::cout << "i: " << i <<" fibonacciAddition(i): " << fibonacciAddition(i) << std::endl;
     }
     std::cout << std::endl;
 
-    for(int i = 0; i < 30; i ++){
+    for(int i = 0; i < 45; i ++){
         std::cout << "i: " << i <<" dynamic_fib(i): ";
         dynamic_fib(i);
     }
