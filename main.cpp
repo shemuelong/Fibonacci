@@ -23,12 +23,11 @@ unsigned long long fibonacci(int a){
 }
 
 void dynamic_fib(int a){
-    auto* fib = new unsigned long long[a];
+    unsigned long long fib[a];
     fib[0] = 1;
     if(a > 0)fib[1] = 1;
     if (a == 0){
         std::cout << 0 << std::endl;
-        delete[] fib;
         return;
     }
     for (int i = 2; i < a; i++){
@@ -36,8 +35,6 @@ void dynamic_fib(int a){
         //std::cout << "fib" << i << ": " << fib[i] << std::endl;
     }
     std::cout << fib[a-1] << std::endl;
-
-    delete[] fib;
 }
 
 int main() {
