@@ -51,7 +51,7 @@ int main() {
     }
     std::cout << std::endl;
 
-    for(int i = 0; i < 40;i++){
+    for(int i = 0; i < 45;i++){
         t1 = clock();
         std::cout << "i: " << i <<" fibonacci(i): " << fibonacci(i) << " time: ";
         t2 = clock();
